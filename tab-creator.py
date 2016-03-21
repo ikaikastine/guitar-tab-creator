@@ -4,9 +4,9 @@ import os.path
 def setup():
 	name = raw_input("Please enter your name: ")
 	song = raw_input("Please enter the song name: ")
-	song.replace(" ", "_")
+	song = song.replace(" ", "_")
 	song_name = song
-	song += '.txt'
+	song += '.txt'	
 	artist = raw_input("Please enter the artist: ")
 	tuning = raw_input("Please enter the song tuning (standard, drop-d, drop-c, d-standard): ")
 	path_name = 'tabs/'
