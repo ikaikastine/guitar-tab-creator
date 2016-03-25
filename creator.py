@@ -30,16 +30,19 @@ def setup():
 def framework(path_to_file, tuning):
 	tuning_strings = []
 	f = open(path_to_file, 'a')
+	f.write("\n")
 	if (tuning == 'standard'):
 		tuning_strings = ['E', 'A', 'D', 'G', 'B', 'E']
 	elif (tuning == 'drop-d'):
 		tuning_strings = ['D', 'A', 'D', 'G', 'B', 'E']
 
+	# This block prints out each string plus four measures
 	for i in range(0, len(tuning_strings)):
-		f.write("%s" % tuning_strings[i])
+		f.write("%s |" % tuning_strings[i])
 		for i in xrange(1, 5):
-			f.write("|--------------------")
+			f.write("--------------------|")
 		f.write("\n")
+	f.write("\n")
 
 if __name__ == "__main__":
 	setup()
