@@ -7,7 +7,7 @@ def setup():
 	# Get song name
 	song = raw_input("Please enter the song name: ")
 	# If user gives whitespace, replace it with an underscore
-	song.replace(" ", "_")
+	song = song.replace(" ", "_")
 	song_name = song
 	song += '.txt'
 	print "songname: ", song
