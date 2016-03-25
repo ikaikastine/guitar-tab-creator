@@ -13,8 +13,8 @@ def setup():
 	# Get the name of the artist
 	artist = raw_input("Please enter the artist: ")
 	# Set the tuning for the song
-	tuning = raw_input("Please enter the song tuning (standard, drop-d, drop-c, d-standard): ")
-	
+	tuning = raw_input("Please enter the song tuning (standard, drop-d): ")
+	# Sets path for files to be placed in tabs folder
 	path_name = 'tabs/'
 	path_to_file = os.path.join(path_name, song)
 
